@@ -16,11 +16,12 @@ public class Simulation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
+    private long population;
     private int infected;
-    private int r;
+    private int r; //wskaźnik określający ile osób zaraża jedna osoba
     private double mortality;
-    private int ti;
-    private int tm;
-    private long ts;
+    private int ti; //ilość dni od zarażenia do wyzdrowienia
+    private int tm; //ilość dni od zarażenia do śmierci
+    private long ts; //czas trwania symulacji - w dniach
 
 }
